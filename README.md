@@ -13,8 +13,8 @@ This document is my report for the Maxime Clementz's (PwC Luxembourg) CTF in TEL
 
 
 ### First flag
-For the first flag, we're asked what are reflexes should be when connecting to a LAN. We therefore do a packet capture in order to check what's exchanged with connected machines. When opening the resulting `pcap file`, we can easily spot the flag:
-[screenshot](https://github.com/cos-imo/TN_2024_CTF_report/blob/main/first_flag_wireshark.png)
+For the first flag, we're asked what are reflexes should be when connecting to a LAN. We therefore do a packet capture in order to check what's exchanged with connected machines. When opening the resulting `pcap file`, we can easily spot the flag in the data section:
+![screenshot](https://github.com/cos-imo/TN_2024_CTF_report/blob/main/first_flag_wireshark.png)
 
 ### Second flag
 
