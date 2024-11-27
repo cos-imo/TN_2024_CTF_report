@@ -84,6 +84,7 @@ So we downloaded 3 tail: an except of [ssh server config file](https://linux.die
 > $ mkdir /mnt/samba
 > $ sudo mount -t cifs -o username=kali //10.0.0.20/sambashare /tmp/samba
 > ```
+> Please note that doing so [is not recommended](https://en.wikipedia.org/wiki/Tunneling_protocol#Secure_Shell_tunneling)
 
 
 ```
