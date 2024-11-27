@@ -176,6 +176,34 @@ So now, we only have to use cyberchef to encode the password (`20TPR20TNS`) in b
 
 > Quoi faire de cette archive?
 
+Now that we got the password to the sftp server, let's connect to it:
+```
+$ sftp -oPort=2221 sftpuser@10.0.0.20
+<Message>
+sftpuser@10.0.0.20 password:
+Connected to 10.0.0.20
+sftp > ls -al
+drwxr-xr-x
+drwxr-xr-x
+-rw-
+
+sftp> cd sFTP_SHARE
+sftp> ls -al
+.ChiffreJulius
+Sujet_2023.zip
+outils
+sftp> exit
+```
+
+Ok, first let's take a look at the hidden file:
+```
+$ cat .ChiffreJulius
+Yr zbg qr cnffr qr y'nepuvir rfg fhe y'nccyvpngvba jro ro clguba
+synt9{Nir-Pnrfne!}
+```
+
+According to the last line, this isn't just some nonsense: that's clearly the 9th flag, encrypted. Using a tool (for instanve cyberchef, dcode...) and guessing that it's some Caesar encoding (since the filename's Julius), we easily get the flag.
+
 ### ???th flag
 
 While we're connected to the sftp server, download the avilable files:
