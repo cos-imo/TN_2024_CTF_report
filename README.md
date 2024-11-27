@@ -4,6 +4,9 @@
 ![Static Badge](https://img.shields.io/badge/Télécom-Projet_scolaire-purple)    
 ![Static Badge](https://img.shields.io/badge/Networking-blue?logo=network)    
 
+> [!CAUTION]
+> This write-up deviates from the standard CTF workflow; instead, it follows a more intuitive, natural progression, and thus some flags might not be in the 'right' order
+
 **Note**: This readme is also available in [french](nolink)   
 **Note**: Don't like links? Me neither. They're all in the source code of this document. If, for some reason, you do not have it, simply check the end of the document
 
